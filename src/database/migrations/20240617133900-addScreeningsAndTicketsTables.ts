@@ -1,6 +1,5 @@
 import { Kysely, SqliteDatabase } from 'kysely'
 
-/** Migration used to initialize empty database tables for the test database. */
 export async function up(db: Kysely<SqliteDatabase>) {
   await db.schema
     .createTable('screenings')
